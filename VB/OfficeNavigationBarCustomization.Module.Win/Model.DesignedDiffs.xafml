@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" ImageName="BO_Scheduler" Index="0" />
+      <Item Id="KPI" ImageName="BO_KPI_Scorecard" Index="1" />
+      <Item Id="Reports" ImageName="BO_Report" Index="2" />
+      <Item Id="Default 2" ImageName="BO_Scheduler" Index="3" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="Event_ListView" ViewId="Event_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="KPI 2" ImageName="BO_KPI_Scorecard" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="KpiDefinition_ListView" ViewId="KpiDefinition_ListView" ObjectKey="" IsNewNode="True" />
+          <Item Id="KpiScorecard_ListView" ViewId="KpiScorecard_ListView" ObjectKey="" IsNewNode="True" />
+        </Items>
+      </Item>
+      <Item Id="Reports 2" ImageName="BO_Report" IsNewNode="True">
+        <Items IsNewNode="True">
+          <Item Id="ReportsV2" ViewId="ReportDataV2_ListView" ObjectKey="" Caption="Reports" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="16.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="16.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.1.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="16.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>
